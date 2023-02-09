@@ -47,13 +47,13 @@ li {
 }
 
 .card {
-  border: 2px botted red;
+  _border: 2px dotted red;
   margin-top: 20px;
   margin-bottom: 20px;
   background: #1D3557;
   padding: 20px;
   border-radius: 7px;
-  box-shadow: 0 10px 30px rgba(0,0,0,.1);
+  box-shadow: 2px 2px 3px grey;
 }
 
 .container {
@@ -82,5 +82,19 @@ li {
   /* For a screen < 540px, this CSS will be read */
   .container {
     width: 300px;
+  }
+}
+
+@media (max-width: 440px) {
+  /* For a screen < 540px, this CSS will be read */
+  .container {
+    width: 250px;
+  }
+}
+
+@media (max-width: 400px) {
+  /* For a screen < 540px, this CSS will be read. */
+  .container {
+    width: 200px;
   }
 }
